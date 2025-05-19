@@ -65,7 +65,7 @@ python webcamsecurity_tool.py</code></pre>
         <li>Under "Signing in to Google", enable <strong>2-Step Verification</strong>.</li>
       </ul>
     </li>
-
+  </ol>
     <li>
       <strong>Generate an App Password</strong>
       <ul>
@@ -77,11 +77,11 @@ python webcamsecurity_tool.py</code></pre>
         <li>A 16-character App Password will be displayed. Copy and use this password in your Python script instead of your regular Gmail password.</li>
       </ul>
     </li>
-
+<ol>
     <li>
       <strong>Use in Python Code</strong>
       <p>Example SMTP configuration in Python:</p>
-      <pre><code>import smtplib
+      <pre><code>import smtplib 
 from email.message import EmailMessage
 
 email_sender = 'your_email@gmail.com'
@@ -101,6 +101,7 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 
   <p><strong>Note:</strong> App passwords are only visible when generated. Keep it secure and do not share it publicly.</p>
 </div>
+
 
 
 <div>
