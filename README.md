@@ -47,10 +47,10 @@
 <div> 
   <h2>⚙️ Installation & Execution</h2>
   <p>Follow the steps below to clone and run the Webcam Security Tool:</p>
-  <pre><code>git clone https://github.com/na-veen8386/Webcam_Security.git
+  <pre><code>git clone https://github.com/na-veen8386/webcam_security_tool.git
 cd webcamsecurity_tool
 pip install pillow secure-smtplib
-python webcamsecurity_tool.py</code></pre>
+python webcam_security_tool.py</code></pre>
 </div>
 
 <div>
