@@ -77,29 +77,6 @@ python webcamsecurity_tool.py</code></pre>
         <li>A 16-character App Password will be displayed. Copy and use this password in your Python script instead of your regular Gmail password.</li>
       </ul>
     </li>
-<ol>
-    <li>
-      <strong>Use in Python Code</strong>
-      <p>Example SMTP configuration in Python:</p>
-      <pre><code>import smtplib 
-from email.message import EmailMessage
-
-email_sender = 'your_email@gmail.com'
-email_password = 'your_app_password'  # 16-character app password
-
-msg = EmailMessage()
-msg['Subject'] = 'Test Email'
-msg['From'] = email_sender
-msg['To'] = 'recipient@example.com'
-msg.set_content('This is a test email sent from Python.')
-
-with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-    smtp.login(email_sender, email_password)
-    smtp.send_message(msg)</code></pre>
-    </li>
-  </ol>
-
-  <p><strong>Note:</strong> App passwords are only visible when generated. Keep it secure and do not share it publicly.</p>
 </div>
 
 
